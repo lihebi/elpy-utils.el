@@ -1,3 +1,21 @@
 #+TITLE: Elpy Utils
 
 To add support for inline image display.
+
+Install and config:
+
+#+BEGIN_SRC elisp
+(use-package elpy-utils
+  :straight (elpy-utils :type git :host github
+                        :repo "lihebi/elpy-utils.el")
+  :config
+  (add-hook 'elpy-mode-hook #'elpy-utils-enable))
+#+END_SRC
+
+In python code:
+
+#+BEGIN_SRC python
+print('#<Image: xxx.png>')
+#+END_SRC
+
+
