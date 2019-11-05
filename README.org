@@ -1,6 +1,8 @@
 #+TITLE: Elpy Utils
 
-To add support for inline image display.
+To add support for inline image display for elpy:
+
+[[assets/screenshot.png/]]
 
 Install and config:
 
@@ -17,5 +19,3 @@ In python code:
 #+BEGIN_SRC python
 print('#<Image: xxx.png>')
 #+END_SRC
-
-
