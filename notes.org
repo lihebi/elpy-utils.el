@@ -1,0 +1,8 @@
+#+TITLE: Implementation notes
+
+* TODO-list
+
+** TODO scale may not work
+
+The scale may not work on some system. I should probably have imagemagick
+library installed. But it is still not working on my advae docker VM.
