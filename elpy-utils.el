@@ -1,3 +1,8 @@
+(defcustom elpy-utils-scale 1.0
+  "Scale ratio of image."
+  :group 'elpy-utils
+  :type 'float)
+
 (defun elpy-utils--replace-image-filter (_)
   (elpy-utils--replace-images))
 
@@ -20,7 +25,7 @@
                                                  'imagemagick
                                                  ;; 'png
                                                  nil
-                                                 :scale 1
+                                                 :scale elpy-utils-scale
                                                  ;; :height 100
                                                  ) "[image]"))
             (goto-char begin)
